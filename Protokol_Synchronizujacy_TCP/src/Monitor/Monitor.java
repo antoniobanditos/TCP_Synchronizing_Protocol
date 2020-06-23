@@ -94,9 +94,9 @@ public class Monitor extends JFrame{
 
 
 		setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-		//         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-
-		create_Button.setText("Stwoz");
+		setResizable(false);
+		
+		create_Button.setText("Stworz");
 		create_Button.setName(""); // NOI18N
 		create_Button.addActionListener(new java.awt.event.ActionListener() {
 			public void actionPerformed(ActionEvent evt) {
@@ -109,8 +109,7 @@ public class Monitor extends JFrame{
 		});
 
 		availableNames_ComboBox.setModel(new DefaultComboBoxModel<>(new String[] { "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P" }));
-		///availableNames_ComboBox.addMouseListener(null);
-
+		
 		chooseName_Label.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
 		chooseName_Label.setText("Wybierz nazwe Agenta");
 

@@ -71,6 +71,7 @@ public class AgentWindow  extends JFrame {
       
 
         setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
+        setResizable(false);
 
         mainPanel.setFont(new Font("Tahoma", 0, 20)); // NOI18N
 
