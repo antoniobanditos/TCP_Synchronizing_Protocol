@@ -62,7 +62,6 @@ public class Agent {
 		
 		for(String agentName : activeAddresses.keySet()) {
 			int existedAgentPort = getPortByName(agentName);
-			System.out.println(existedAgentPort);
 			informAboutMe(existedAgentPort);
 		}
 	}
@@ -275,7 +274,7 @@ public class Agent {
                 boolean isDialogueContinues=true;
                 while(isDialogueContinues&&!clientDialog.isClosed()) {
                 	String entry = messageAccepted(input,output);
-                	System.out.println("Agent "+name+" get message:"+entry+"from "+clientDialog.getPort());
+                	System.out.println("Agent "+name+" get message:"+entry+" from "+clientDialog.getPort());
                 	switch(Commands.valueOf(entry)) {
                 		case NEW: {
                 			String[] clock_port_name=messageAccepted(input,output).split(";");
